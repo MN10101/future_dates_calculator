@@ -23,18 +23,19 @@ To use this application, follow these steps:
    ```bash
    git clone https://github.com/najmehfuturedatescalculator/future-dates-calculator.git
 
-3. Navigate to the project directory:
-   cd future-dates-calculator
-   
-4. Build the project using Maven:
+2. Navigate to the project directory:
+  cd future-dates-calculator
+
+3. Build the project using Maven:
    mvn clean install
+
    
-6. Run the application:
+4. Run the application:
    mvn spring-boot:run
-   
-7. Open your web browser and go to http://localhost:8080/ to access the application.
-8. Enter the starting date, number of days, hours, and minutes into the future, and optionally a second date.
-9. Click on the "Calculate" button to see the calculated future date and time.
+      
+6. Open your web browser and go to http://localhost:8080/ to access the application.
+7. Enter the starting date, number of days, hours, and minutes into the future, and optionally a second date.
+8. Click on the "Calculate" button to see the calculated future date and time.
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
