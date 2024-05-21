@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="icon" href="/img/6.jpg" type="image/x.icon">
+    <title>Future Date Calculator</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+</head>
+<body>
+<div class="container">
+    <h1>Future Dates Calculator</h1>
+    <form action="#" th:action="@{/calculate}" th:object="${dateForm}" method="post">
+        <label for="startingDate">Starting Date:</label>
+        <input type="date" id="startingDate" th:field="*{startingDate}" required />
+
+        <label for="futureDays">Number of Days Into the Future:</label>
+        <input type="number" id="futureDays" th:field="*{futureDays}" required min="0" />
+
+        <label for="futureHours">Number of Hours Into the Future:</label>
+        <input type="number" id="futureHours" th:field="*{futureHours}" required min="0" max="23" />
+
+        <label for="futureMinutes">Number of Minutes Into the Future:</label>
+        <input type="number" id="futureMinutes" th:field="*{futureMinutes}" required min="0" max="59" />
+
+        <label for="secondDate">Second Date (to calculate days between):</label>
+        <input type="date" id="secondDate" th:field="*{secondDate}" />
+
+        <button type="submit">Calculate</button>
+    </form>
+    <div class="error" th:if="${error}">
+        <p th:text="${error}"></p>
+    </div>
+</div>
+</body>
+</html>
