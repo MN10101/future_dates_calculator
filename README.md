@@ -47,4 +47,6 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 - Mahmoud Najmeh
 
+![12](https://github.com/MN10101/future_dates_calculator/assets/78208459/6084e690-c0ee-45b0-96e6-fd731787e582)
 
+![13](https://github.com/MN10101/future_dates_calculator/assets/78208459/d0caf5e5-bdf0-4041-a223-6a8b3cf7bc95)
