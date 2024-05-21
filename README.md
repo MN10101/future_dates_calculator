@@ -26,7 +26,7 @@ git clone https://github.com/najmehfuturedatescalculator/future-dates-calculator
 
 2. Navigate to the project directory:
 
-cd future-dates-calculator
+- cd future-dates-calculator
 
 3. Build the project using Maven:
 
