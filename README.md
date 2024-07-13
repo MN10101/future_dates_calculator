@@ -21,7 +21,7 @@ To use this application, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/najmehfuturedatescalculator/future-dates-calculator.git
+   git clone https://github.com/MN10101/future_dates_calculator
 
 2. Navigate to the project directory:
    ```bash  
