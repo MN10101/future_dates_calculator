@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bs-white);
@@ -8,8 +9,10 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
+/* Root Variables */
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -32,11 +35,11 @@ body {
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    );
 }
 
+/* Container Styles */
 .container {
-    background: var(--bs-cyan);
+    background-color: var(--bs-cyan);
     padding: 40px 60px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -46,28 +49,29 @@ body {
     animation: fadeInUp 0.5s ease-out forwards;
 }
 
+/* Headings */
 h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: #333;
     text-align: center;
 }
 
+/* Form Elements */
 form {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 label {
     font-weight: 500;
-    margin-bottom: 8px;
     color: #555;
 }
 
 input[type="date"],
 input[type="number"] {
     padding: 10px;
-    margin-bottom: 20px;
     border: 1px solid #ced4da;
     border-radius: 5px;
     font-size: 16px;
@@ -81,8 +85,9 @@ input[type="number"]:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
+/* Buttons */
 button {
-    background-color: #007bff;
+    background-color: var(--bs-blue);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -98,32 +103,33 @@ button:hover {
     transform: scale(1.08);
 }
 
+/* Links */
 a {
     color: var(--bs-danger);
     text-decoration: none;
-    display: block;
     text-align: center;
     margin-top: 20px;
-    transform: scale(1.08);
+    transition: text-decoration 0.3s;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+/* Error Messages */
 .error {
     color: #e74c3c;
     margin-top: -15px;
-    margin-bottom: 20px;
-    text-align: center;
     font-weight: bold;
+    text-align: center;
 }
 
+/* Result Section */
 .result {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
-    color: black;
+    color: #000;
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -144,6 +150,6 @@ a:hover {
         opacity: 0;
     }
     to {
-        opacity: 5;
+        opacity: 1;
     }
 }
